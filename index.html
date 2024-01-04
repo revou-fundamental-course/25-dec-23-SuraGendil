@@ -4,13 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Revou</title>
-    <link rel="stylesheet" href="asset/css/index.css">
-    <script src="asset/js/index.js"></script>
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
+    <header class="header">
+        <!-- Pembukaan -->
+        <h1>Welcome To Katik</h1>
+        <h3>Hai Sobat, Selamat Datang di katik :)</h3>
+        <h3>Sebuah web apps sederhana yang berfungsi untuk menghitung luas dan keliling bangun datar</h3>
 
+        <!-- Judul  -->
+        <h1 class="judul">Segitiga</h1>
+    </header>
+
+    <!-- Tombol Luas dan Keliling -->
+    <div class="buttons-container">
+        <button onclick="calculateArea()">Luas</button>
+        <button onclick="calculatePerimeter()">Keliling</button>
+    </div>
+
+    <div class="gambarsegita">
+        <img src="asset/891d6-segitiga 1.png" alt="Segitiga">
+    </div>
+
+    <div class="result-container">
+        <div id="luasResult" class="result-content">
+            <!-- Konten untuk Luas akan muncul di sini -->
+            <h2>Rumus Luas Segitiga :</h2>
+            <p>L = 1/2 x a x t </p>
+            <p><strong>Keterangan :</strong></p>
+            <p>L = Luas</p>
+            <p>a = Panjang Atas</p>
+            <p>t = Tinggi</p>
+
+            <div class="garis-lurus"></div>
+
+            <!-- Inputan untuk menghitung Luas -->
+            <label for="panjangAtas">Panjang Atas:</label>
+            <input type="number" id="panjangAtas" placeholder="Masukkan panjang atas">
+
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi" placeholder="Masukkan tinggi">
+
+            <button onclick="calculateLuas()">Hitung Luas</button>
+
+            <div id="hasilLuas"></div>
+
+            <button onclick="resetForm()">Reset</button>
+        </div>
+
+        <div id="kelilingResult" class="result-content">
+            <!-- Konten untuk Keliling akan muncul di sini -->
+            <h2>Rumus Keliling Segitiga :</h2>
+            <p>K = S1 + S2 + S3 </p>
+            <p><strong>Keterangan :</strong></p>
+            <p>K = Keliling</p>
+            <p>S1 = Sisi A</p>
+            <p>S2 = Sisi B</p>
+            <p>S3 = Sisi C</p>
+            <div class="garis-lurus"></div>
+
+            <!-- Inputan untuk menghitung Keliling -->
+            <label for="sisiA">Sisi A:</label>
+            <input type="number" id="sisiA" placeholder="Masukkan panjang sisi A">
+
+            <label for="sisiB">Sisi B:</label>
+            <input type="number" id="sisiB" placeholder="Masukkan panjang sisi B">
+
+            <label for="sisiC">Sisi C:</label>
+            <input type="number" id="sisiC" placeholder="Masukkan panjang sisi C">
+
+            <button onclick="calculateKeliling()">Hitung Keliling</button>
+
+            <div id="hasilKeliling"></div>
+
+            <button onclick="resetForm()">Reset</button>
+        </div>
+    </div>
 </body>
 
 </html>

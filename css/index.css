@@ -1,0 +1,84 @@
+/* Gaya untuk Pembukaan applikasi */
+.header {
+    background-color: darkturquoise;
+    text-align: center;
+}
+
+/* Gaya untuk bagian judul Applikasi */
+.judul {
+    background-color: blue;
+    color: aliceblue;
+}
+
+/* Gaya untuk tombol */
+.buttons-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk Perpindahan Luas dan Keliling */
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-content {
+    display: none;
+    width: 50%;
+    margin: 20px auto;
+    background-color:aquamarine;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Gaya untuk input dan tombol */
+input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk hasil perhitungan */
+#hasilLuas {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Gaya untuk gambar segitiga */
+.gambarsegita {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gambarsegita img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Gaya untuk garis lurus */
+.garis-lurus {
+    border: 1px solid #000;
+    margin: 20px 0; 
+}
